@@ -1,10 +1,10 @@
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
-       xmlns:jiushu="/Users/johngao/Desktop/dubbo2_test/dubbo-comsumer/src/main/resources"
+       xmlns:jiushu="https://github.com/gaoxianglong/dubbo3_test/tree/master/dubbo-comsumer/src/main/resources"
        xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
-/Users/johngao/Desktop/dubbo2_test/dubbo-comsumer/src/main/resources /Users/johngao/Desktop/dubbo2_test/dubbo-comsumer/src/main/resources/jiushu.xsd">
+https://github.com/gaoxianglong/dubbo3_test/tree/master/dubbo-comsumer/src/main/resources https://github.com/gaoxianglong/dubbo3_test/tree/master/dubbo-comsumer/src/main/resources/jiushu.xsd">
     <dubbo:application name="order-consumer"/>
     <dubbo:reference scope="remote" id="orderService" check="false" interface="com.github.service.order.OrderService"
                      timeout="600000" url="dubbo://192.168.1.100:20891" registry="N/A"/>

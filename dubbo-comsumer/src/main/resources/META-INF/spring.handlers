@@ -1,2 +1,2 @@
-/Users/johngao/Desktop/dubbo2_test/dubbo-comsumer/src/main/resources=com.github.service.test.MyNamespaceHandler
+https\://github.com/gaoxianglong/dubbo3_test/tree/master/dubbo-comsumer/src/main/resources=com.github.service.test.MyNamespaceHandler
 http\://code.alibabatech.com/schema/dubbo=org.apache.dubbo.config.spring.schema.DubboNamespaceHandler
