@@ -25,10 +25,10 @@
             <MaxFileSize>100MB</MaxFileSize>
         </triggeringPolicy>
     </appender>
-    <logger name="com.github" level="INFO"/>
-    <logger name="org.apache.dubbo" level="INFO"/>
+    <logger name="com.github" level="ERROR"/>
+    <logger name="org.apache.dubbo" level="ERROR"/>
     <!-- 日志输出级别 -->
-    <root level="INFO">
+    <root level="ERROR">
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="FILE"/>
     </root>

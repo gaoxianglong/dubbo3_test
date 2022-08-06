@@ -15,27 +15,19 @@
  */
 package com.github.service.test;
 
-import com.github.service.order.OrderService;
-import com.github.service.order.dto.Money;
-import com.github.service.order.dto.OrderRequest;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.math.BigDecimal;
+import java.io.IOException;
 
 /**
  * @author gao_xianglong@sina.com
  * @version 0.1-SNAPSHOT
- * @date created in 2022/5/31 16:39
+ * @date created in 2022/8/6 01:05
  */
-public class Starter {
+public class Test3 {
     public static void main(String[] args) {
-        var context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        OrderService orderService = (OrderService) context.getBean("orderService");
-        orderService.makeOrder(new OrderRequest() {{
-            this.setItemId(1);
-            this.setOrderId(2);
-            this.setCreateTime(System.currentTimeMillis());
-            this.setMoney(new Money(new BigDecimal("12.55"), "CNY"));
-        }});
+        //System.out.println(getObj());
+    }
+
+    static <T> T getObj() {
+        return (T) "Hello";
     }
 }

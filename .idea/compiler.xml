@@ -12,11 +12,11 @@
         <module name="dubbo-comsumer" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="15">
-      <module name="dubbo-api" target="15" />
-      <module name="dubbo-comsumer" target="15" />
-      <module name="dubbo-provider" target="15" />
-      <module name="dubbo3_test" target="15" />
+    <bytecodeTargetLevel target="8">
+      <module name="dubbo-api" target="8" />
+      <module name="dubbo-comsumer" target="8" />
+      <module name="dubbo-provider" target="8" />
+      <module name="dubbo3_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

@@ -15,10 +15,15 @@
  */
 package com.github;
 
+import org.apache.dubbo.common.logger.LoggerFactory;
+import org.apache.log4j.LogManager;
+import org.slf4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.Enumeration;
 
 /**
  * @author gao_xianglong@sina.com
@@ -26,7 +31,9 @@ import java.io.IOException;
  * @date created in 2022/5/31 15:31
  */
 public class Starter {
-    public static void main(String[] args) {
+    static Logger logger = org.slf4j.LoggerFactory.getLogger(Starter.class);
+
+    public static void main(String[] args) throws IOException {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         System.out.println("provider start...");
         try {

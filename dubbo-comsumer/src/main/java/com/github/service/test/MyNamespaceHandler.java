@@ -13,35 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.service.order.dto;
+package com.github.service.test;
 
-import lombok.Data;
-
-import java.io.Serializable;
-import java.util.Arrays;
-import java.util.Objects;
+import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
 
 /**
  * @author gao_xianglong@sina.com
  * @version 0.1-SNAPSHOT
- * @date created in 2022/5/31 15:17
+ * @date created in 2022/8/6 10:06
  */
-@Data
-public class OrderRequest implements Serializable {
-    private long orderId;
-    private long itemId;
-    private Money money;
-    private long createTime;
-    private byte[] value;
+public class MyNamespaceHandler extends NamespaceHandlerSupport {
+    public MyNamespaceHandler() {
+        System.out.println("==init==");
+    }
 
     @Override
-    public String toString() {
-        return "OrderRequest{" +
-                "orderId=" + orderId +
-                ", itemId=" + itemId +
-                ", money=" + money +
-                ", createTime=" + createTime +
-                ", value=" + (Objects.nonNull(value) ? value.length : null) +
-                '}';
+    public void init() {
+        System.out.println("====init====");
     }
 }
